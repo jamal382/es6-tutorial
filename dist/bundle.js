@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const a = 10;\nconst b = 20;\n\nconst sum = (a, b) => a + b;\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const a = 10;\nconst b = 20;\n\nconst sum = (a, b) => a + b;\n\nconsole.log(sum(a, b));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
