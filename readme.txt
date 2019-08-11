@@ -26,3 +26,4 @@ https://medium.com/@jeffrey.allen.lewis/the-ultimate-2018-webpack-4-and-babel-se
 npm install webpack webpack-cli webpack-dev-server --save-dev
 npm install @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-react @babel/register --save-dev
 npm install babel-loader style-loader css-loader
+npm install -D webpack-dev-server
