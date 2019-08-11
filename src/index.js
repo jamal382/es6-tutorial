@@ -123,9 +123,13 @@ console.log(arr);
 //  Spread Properties
 /*  let n = { x, y, ...z };
  console.log(n); // { x: 1, y: 2, a: 3, b: 4 } */
- 
+
 //Module System in Details
 /*  import * as math from './math';
  console.log(math) */
 //  import {add,mod} from './math';
 //  console.log(add(2,5));
+import Person from './person';
+let p = new Person("jamal khan", "jamal.khan@brotecs.com")
+console.log(p.name);
+console.log(p.email);
