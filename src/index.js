@@ -129,7 +129,11 @@ console.log(arr);
  console.log(math) */
 //  import {add,mod} from './math';
 //  console.log(add(2,5));
-import Person from './person';
+/* import Person from './person';
 let p = new Person("jamal khan", "jamal.khan@brotecs.com")
 console.log(p.name);
-console.log(p.email);
+console.log(p.email); */
+import Student from './student'
+let stu = new Student('Xabir khan','xabirkhan@gmail.com','1234560');
+
+stu.print();
