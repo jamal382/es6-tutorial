@@ -133,7 +133,42 @@ console.log(arr);
 let p = new Person("jamal khan", "jamal.khan@brotecs.com")
 console.log(p.name);
 console.log(p.email); */
-import Student from './student'
-let stu = new Student('Xabir khan','xabirkhan@gmail.com','1234560');
+// Classes And Inheritance in Details
+/* import Student from './student'
+let stu = new Student('Xabir khan','xabirkhanbd@gmail.com','1234560');
+stu.print(); */
+//  Promise
+/* let myFirstPromise = new Promise(
+    (resolve,reject) => {
+        let name = "jamal khan";
+        //resolve(name);
+        setTimeout(
+            ()=>resolve(name),3000
+        );
+    }
+);
+// console.log(myFirstPromise);
+myFirstPromise.then(name =>{
+    console.log(`i am ${name}`);
+}); */
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(response=> response.json())
+//.then(body => console.log(body))
+.then((body) =>{
+    //body.map(data => console.log(data.name))
+    const lis = body.map((data) =>{
+        let li = document.createElement("li");
+        let text = `Name: ${data.name}, Email: ${data.email}`;
+        let textNode = document.createTextNode(text);
 
-stu.print();
+        li.append(textNode);
+
+        return li;
+    });
+
+    lis.forEach(element => {
+       document.getElementById("mylist").appendChild(element);
+    });
+
+})
+.catch(err =>console.log(err))
